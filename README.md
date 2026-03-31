@@ -2,6 +2,12 @@
 
 Drop-in Zelda Gear mod packaging for a Hytale server root. 🎒✨
 
+## 🔍 Quick overview (what was fixed)
+
+- Hookshot and Longshot now actually fire, pull, and behave as intended instead of feeling broken or unreliable.
+- Hylian Workbench item uses the community fix so it shows up and works correctly in-game.
+- All changes are done via config/data files only—no new gameplay systems added, just bugfix polish.
+
 ## 📦 What’s included
 
 - `mods/ZeldaGear-1.9.jar` (the mod)
