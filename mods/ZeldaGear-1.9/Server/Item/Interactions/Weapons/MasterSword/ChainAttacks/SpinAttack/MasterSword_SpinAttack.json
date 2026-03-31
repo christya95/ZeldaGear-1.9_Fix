@@ -1,0 +1,48 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "MasterSword_SpinSelector",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "MasterSword_SpinSelector"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "Vortexstrike_Spin_Effect",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "MasterSword_SpinAttack_Effect"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "ChangeStat",
+            "StatModifiers": {
+              "Stamina": -5.2,
+              "StaminaRegenDelay": -2.8
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

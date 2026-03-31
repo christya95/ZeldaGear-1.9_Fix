@@ -1,0 +1,74 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Zora_Cap.name",
+    "Description": "server.items.Zora_Cap.description"
+  },
+  "Parent": "HerosHat",
+  "ItemLevel": 200,
+  "Icon": "Icons/ItemsGenerated/ZoraHat.png",
+  "Model": "Items/Armor/Hat.blockymodel",
+  "Texture": "Items/Armor/ZoraTunic/ZoraCap.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Food_Fish_Raw",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Zelda_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Zelda_Armor"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 7,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 8,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 3
+        }
+      ]
+    },
+    "CosmeticsToHide": [
+      "HeadAccessory"
+    ]
+  },
+  "Quality": "Rare",
+  "Set": "Tunics",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      37,
+      66,
+      27
+    ],
+    "Translation": [
+      12,
+      -11
+    ]
+  }
+}

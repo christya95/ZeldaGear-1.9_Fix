@@ -1,0 +1,10 @@
+{
+  "$Comment": "Skips shortbow signature/arrow logic; uses item InteractionVars.Primary_Shoot_Charge (hookshot charge + HookshotInteraction).",
+  "Type": "Replace",
+  "Var": "Primary_Shoot_Charge",
+  "DefaultValue": {
+    "Interactions": [
+      "Weapon_Shortbow_Primary_Shoot_Charge"
+    ]
+  }
+}

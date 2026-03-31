@@ -1,0 +1,18 @@
+{
+  "Icon": "Icons/ItemCategories/Zelda.png",
+  "Order": 3,
+  "Children": [
+    {
+      "Id": "Gear",
+      "Name": "Gear",
+      "Icon": "Icons/ItemCategories/Items-Weapons.png",
+      "Order": 0,
+      "InfoDisplayMode": "Tooltip"
+    },
+    {
+      "Id": "Misc",
+      "Icon": "Icons/ItemCategories/Items-Tools.png",
+      "Name": "Misc"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "server.items.Spirit_Shield.name",
+    "Description": "server.items.Spirit_Shield.description"
+  },
+  "Categories": [
+    "ZeldaGear.Gear",
+    "Items.Weapons"
+  ],
+  "Model": "Items/Weapons/Shield/ToonShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/SpiritShield.png",
+  "Icon": "Icons/ItemsGenerated/SpiritShield.png",
+  "Quality": "Uncommon",
+  "ItemLevel": 3,
+  "Scale": 1.1,
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -27,
+      -27
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Zelda_Bench",
+        "Categories": [
+          "Weapon_Shield"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 2
+      }
+    ]
+  },
+  "Set": "D7_Shield"
+}

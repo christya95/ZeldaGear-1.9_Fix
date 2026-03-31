@@ -1,0 +1,83 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Goron_Cap.name",
+    "Description": "server.items.Goron_Cap.description"
+  },
+  "Parent": "HerosHat",
+  "ItemLevel": 200,
+  "Icon": "Icons/ItemsGenerated/GoronHat.png",
+  "Model": "Items/Armor/Hat.blockymodel",
+  "Texture": "Items/Armor/GoronTunic/GoronCap.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Fire_Essence",
+        "Quantity": 50
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Zelda_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Zelda_Armor"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 7,
+    "DamageResistance": {
+      "Fire": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.4
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 8,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 3
+        }
+      ]
+    },
+    "CosmeticsToHide": [
+      "HeadAccessory"
+    ]
+  },
+  "Quality": "Legendary",
+  "Set": "GoronSet",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      37,
+      66,
+      27
+    ],
+    "Translation": [
+      12,
+      -11
+    ]
+  }
+}

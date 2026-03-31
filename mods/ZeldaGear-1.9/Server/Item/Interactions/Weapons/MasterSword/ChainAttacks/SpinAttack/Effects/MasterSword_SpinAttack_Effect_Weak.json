@@ -1,0 +1,18 @@
+{
+  "Type": "Simple",
+  "$Comment": "Length of Effect",
+  "Effects": {
+    "CameraEffect": "Sword_Spin",
+    "MovementEffects": {
+      "DisableSprint": false
+    },
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SpinAttack",
+    "Trails": [
+      {
+        "TargetNodeName": ""
+      }
+    ]
+  },
+  "RunTime": 0.56
+}

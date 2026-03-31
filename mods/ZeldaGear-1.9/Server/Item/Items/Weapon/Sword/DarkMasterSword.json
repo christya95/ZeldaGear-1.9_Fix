@@ -1,0 +1,65 @@
+{
+  "Parent": "MasterSword",
+  "TranslationProperties": {
+    "Name": "server.items.Dark_Master_Sword.name",
+    "Description": "server.items.Dark_Master_Sword.description"
+  },
+  "Texture": "Items/Weapons/Sword/DarkMasterSword.png",
+  "Quality": "Epic",
+  "Icon": "Icons/ItemsGenerated/DarkMasterSword.png",
+  "Recipe": {
+    "TimeSeconds": 5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 6
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Sword"
+        ],
+        "Id": "Zelda_Bench",
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "Categories": [
+    "ZeldaGear.Gear",
+    "Items.Weapons"
+  ],
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "sword"
+    ]
+  },
+  "Variant": true,
+  "ItemAppearanceConditions": {
+    "Health": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "ModelVFXId": "DarkMasterSwordVFX"
+      }
+    ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 149
+}

@@ -1,0 +1,43 @@
+{
+  "Parent": "HylianShield",
+  "TranslationProperties": {
+    "Name": "server.items.Masked_Mirror_Shield.name",
+    "Description": "server.items.Masked_Mirror_Shield.description"
+  },
+  "Model": "Items/Weapons/Shield/MaskedMirrorShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/MaskedMirrorShield.png",
+  "Icon": "Icons/ItemsGenerated/MaskedMirrorShield.png",
+  "Quality": "Epic",
+  "IconProperties": {
+    "Scale": 0.55,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -25,
+      -25
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Zelda_Bench",
+        "Categories": [
+          "Weapon_Shield"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 10
+      }
+    ]
+  },
+  "Set": "D4_Shield",
+  "ItemLevel": 300
+}

@@ -1,0 +1,53 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Purple_Cap.name",
+    "Description": "server.items.Purple_Cap.description"
+  },
+  "Parent": "HerosHat",
+  "ItemLevel": 32,
+  "Icon": "Icons/ItemsGenerated/PurpleHat.png",
+  "Model": "Items/Armor/Hat.blockymodel",
+  "Texture": "Items/Armor/PurpleTunic/PurpleCap.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Leather_Medium",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Zelda_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Zelda_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Quality": "Epic",
+  "Set": "Purple",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      37,
+      66,
+      27
+    ],
+    "Translation": [
+      12,
+      -11
+    ]
+  }
+}

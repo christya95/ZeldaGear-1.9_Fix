@@ -1,0 +1,43 @@
+{
+  "Parent": "HylianShield",
+  "TranslationProperties": {
+    "Name": "server.items.Dark_HylianShield.name",
+    "Description": "server.items.Dark_HylianShield.description"
+  },
+  "Model": "Items/Weapons/Shield/HylianShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/DarkHylianShield.png",
+  "Icon": "Icons/ItemsGenerated/DarkHylianShield.png",
+  "Quality": "Epic",
+  "Variant": true,
+  "Set": "D_Shield",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Zelda_Bench",
+        "Categories": [
+          "Weapon_Shield"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 10
+      }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -28,
+      -28
+    ]
+  }
+}

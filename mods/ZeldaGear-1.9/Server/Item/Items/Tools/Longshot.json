@@ -1,0 +1,109 @@
+{
+  "TranslationProperties": {
+    "Name": "Longshot"
+  },
+  "Quality": "Epic",
+  "Model": "Items/Tools/Longshot.blockymodel",
+  "Texture": "Items/Tools/Longshot.png",
+  "Icon": "Icons/ItemsGenerated/Longshot.png",
+  "ItemLevel": 35,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 25
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Zelda_Equipment"
+        ],
+        "Id": "Zelda_Bench",
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Primary_Shoot_Charge": {
+      "Interactions": [
+        {
+          "$Comment": "Charging up the hookshot",
+          "Type": "Charging",
+          "AllowIndefiniteHold": true,
+          "DisplayProgress": false,
+          "Effects": {
+            "ItemAnimationId": "Ready",
+            "ClearAnimationOnFinish": true,
+            "ClearSoundEventOnFinish": true,
+            "WorldSoundEventId": "SFX_Daggers_T2_Guard",
+            "LocalSoundEventId": "SFX_Daggers_T2_Guard_Local"
+          },
+          "Next": {
+            "0.01": {
+              "Type": "StatsCondition",
+              "Costs": {
+                "Stamina": 1
+              },
+              "Next": {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "Stamina": -2
+                },
+                "Next": {
+                  "Type": "HookshotInteraction",
+                  "PullSpeed": 35.0,
+                  "MaxDistance": 45.0
+                }
+              },
+              "Lenient": true,
+              "LessThan": false,
+              "Effects": {
+                "WaitForAnimationToFinish": true
+              }
+            }
+          },
+          "Failed": {
+            "Type": "Simple"
+          }
+        }
+      ],
+      "RequireNewClick": true
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.58,
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      315,
+      90,
+      0
+    ],
+    "Translation": [
+      -7,
+      -24
+    ]
+  },
+  "Categories": [
+    "ZeldaGear.Gear"
+  ],
+  "PlayerAnimationsId": "Hookshot",
+  "Interactions": {
+    "Primary": "Root_Hookshot_Primary",
+    "Secondary": "Root_Hookshot_Primary"
+  },
+  "MaxStack": 1,
+  "Set": "C_Hookshot"
+}

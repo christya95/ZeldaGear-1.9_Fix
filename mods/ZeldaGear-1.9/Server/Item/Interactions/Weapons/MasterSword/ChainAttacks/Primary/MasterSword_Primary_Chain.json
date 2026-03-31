@@ -1,0 +1,51 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 1.2,
+  "ChainId": "Sword_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "MasterSword_Swing_Right"
+        ],
+        "RequireNewClick": true
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Left",
+      "DefaultValue": {
+        "Interactions": [
+          "MasterSword_Swing_Left"
+        ],
+        "RequireNewClick": true
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "MasterSword_Swing_Right"
+        ],
+        "RequireNewClick": true
+      },
+      "CancelOnItemChange": false
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Down",
+      "DefaultValue": {
+        "Interactions": [
+          "MasterSword_Swing_Down"
+        ]
+      }
+    }
+  ]
+}

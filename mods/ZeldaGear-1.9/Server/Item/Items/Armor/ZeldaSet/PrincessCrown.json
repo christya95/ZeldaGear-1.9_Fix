@@ -1,0 +1,45 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Princess_Crown.name",
+    "Description": "server.items.Princess_Crown.description"
+  },
+  "Parent": "HerosHat",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/PrincessCrown.png",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -3,
+      -19
+    ]
+  },
+  "Model": "Items/Armor/ZeldaSet/PrincessCrown.blockymodel",
+  "Texture": "Items/Armor/ZeldaSet/PrincessCrown.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Zelda_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Zelda_Armor"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Quality": "Epic",
+  "Set": "Y_PrincessSet"
+}

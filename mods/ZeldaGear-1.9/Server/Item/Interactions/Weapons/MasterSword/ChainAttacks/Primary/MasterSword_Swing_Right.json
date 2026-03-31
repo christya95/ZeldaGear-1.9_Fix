@@ -1,0 +1,22 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.1,
+  "Effects": {
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SwingRight",
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Lunge",
+    "LocalSoundEventId": "SFX_Light_Melee_T2_Lunge",
+    "WaitForAnimationToFinish": false
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "MasterSword_Swing_Right_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "MasterSword_Swing_Right_Selector"
+      ]
+    }
+  },
+  "CancelOnItemChange": false
+}
